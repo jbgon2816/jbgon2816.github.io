@@ -297,7 +297,8 @@ jobs:
       - trigger-docs-platform-preview-build
 
   trigger-deploy:
-    docker:
+  theme: modernist
+  docker:
       - image: cibuilds/aws:1.16.185
     steps:
       - trigger-docs-platform-build
